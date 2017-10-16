@@ -1,0 +1,7 @@
+1# Basic Computer Service#30#This includes a complete system check, computer case clean out, and an in-depth exam of all connectors.
+2# Virus & Malware Removal#70#Includes a full removal of any viruses or malware detected and a 30 day guarantee on the removal.
+3# Windows Re-install#130#A complete install of a genuine Microsoft Windows Operation System.
+4# On-site Visit#75#Onsite computer service & repairs.
+5# Remote Access Repair#45#This only includes minor repairs, which will be determined by the technician.
+6# Modem/Router Setup and Repair#40#Make sure everthing is working correctly.
+7# Windows & Basic Network Training#35#Hands on training with Windows, Mac, and residential Modem/Routers.
