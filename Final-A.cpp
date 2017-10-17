@@ -63,9 +63,11 @@ int saveInfo()
 	//determine whether the file is open
 	if (appointMent != 'Y' || appointMent != 'N')
 	{
-		cout << "Would you like to make an appointment? Y for yes and N for no " << endl;
+		
+		cout << "Would you like to make an appointment? Y for yes and N for no ";
 		cin >> appointMent;
 		cin.ignore();
+		appointMent = toupper(appointMent);
 		cout << endl;
 		
 		if (appointMent == 'Y')
