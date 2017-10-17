@@ -21,10 +21,11 @@ int main(int argc, char *argv[])
 	
     while (customer != 'Y' && customer != 'N')
 	{
-		cout << "Are you an existing customer!\n";
+		cout << "Are you an existing customer!\n" << endl;
 		cin >> customer;
 		cin.ignore();
 		customer = toupper(customer);
+		cout << endl;
 		
 		if (customer == 'Y')
 		{
@@ -145,7 +146,7 @@ void readInfo()
 	{
 		cout << "File failed to open" << endl;
 	}
-		cout << "What service would you like? ";
+		cout << "What service would you like? " << endl;
 		cin >> inputString;
 		input = atoi(inputString.c_str());
 		
@@ -182,8 +183,8 @@ void readInfo()
 				cout << "File services.txt failed to open. " << endl;
 			}
 			// determine price
-			cout << number << stringCost << endl;
-			cout << "Let me give you an estimate of the service! ";
+			cout << number << endl;
+			cout << "Let me give you an estimate of the service! " << endl;
 			/*getline(inFile, stringCost, '#');*/
 			int cost = atoi(stringCost.c_str());	
 			tax =  cost * 0.08;
