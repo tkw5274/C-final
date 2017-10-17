@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	
     while (customer != 'Y' && customer != 'N')
 	{
-		cout << "Are you an existing customer!\n" << endl;
+		cout << "Are you an existing customer?\n";
 		cin >> customer;
 		cin.ignore();
 		customer = toupper(customer);
@@ -63,9 +63,10 @@ int saveInfo()
 	//determine whether the file is open
 	if (appointMent != 'Y' || appointMent != 'N')
 	{
-		cout << "Would you like to make an appointment? Y for yes and N for no ";
+		cout << "Would you like to make an appointment? Y for yes and N for no " << endl;
 		cin >> appointMent;
 		cin.ignore();
+		cout << endl;
 		
 		if (appointMent == 'Y')
 		{
@@ -138,7 +139,7 @@ void readInfo()
 			getline(inFile, services, '#');
 			getline(inFile, stringCost, '#');
 			getline(inFile, descr);
-			cout << number << " " << services << " - $" << stringCost << endl << "   " << descr << endl << endl;
+			cout << number << " " << services << " - $" << stringCost << endl << "   " << descr << endl;
 		}
 		inFile.close();
 	}
@@ -183,7 +184,7 @@ void readInfo()
 				cout << "File services.txt failed to open. " << endl;
 			}
 			// determine price
-			cout << number << endl;
+			cout << endl;
 			cout << "Let me give you an estimate of the service! " << endl;
 			/*getline(inFile, stringCost, '#');*/
 			int cost = atoi(stringCost.c_str());	
@@ -194,7 +195,8 @@ void readInfo()
 			cout << "Tax: $" << setprecision(2) << tax << endl;
 			cout << fixed;
 			cout << "Total Cost: $" << setprecision(2) << totalCost << endl;
-			input = 0; 
+			input = 0;
+			cout << endl; 
 		}	
 		getline(inFile,services,'#');
 		inFile.close();
