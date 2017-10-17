@@ -137,7 +137,7 @@ void readInfo()
 			getline(inFile, services, '#');
 			getline(inFile, stringCost, '#');
 			getline(inFile, descr);
-			cout << number << " " << services << " $" << stringCost << " " << descr << endl;
+			cout << number << " " << services << " - $" << stringCost << endl << "   " << descr << endl << endl;
 		}
 		inFile.close();
 	}
