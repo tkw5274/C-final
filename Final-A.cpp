@@ -110,7 +110,7 @@ void searchInfo()
 	//determine whether the file is open
 	if (outFile.is_open())
 	{
-		cout << "Welcome back " << name << ".\n";
+		cout << "Welcome back" << name << ".\n" << endl;
 		cout << "What service would you like? " << endl;
 		readInfo();
 		saveInfo();
